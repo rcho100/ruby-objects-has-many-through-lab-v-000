@@ -22,5 +22,5 @@ class Patient
       appointment.patient == patient 
     end
   end
-  
+
 end
