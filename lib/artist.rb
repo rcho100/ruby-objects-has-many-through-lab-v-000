@@ -4,13 +4,13 @@ class Artist
 
   @@all = []
 
+  def self.all
+    @@all
+  end
+
   def initialize(name)
     @name = name
     @@all << self
-  end
-
-  def self.all
-    @@all
   end
 
   def new_song(name, genre)
@@ -22,14 +22,10 @@ class Artist
       song.artist == self
     end
   end
-  # def songs
-  #   @songs
-  # end
 
   def genres
     songs.collect do |object|
       object.genre
     end
   end
-
 end
