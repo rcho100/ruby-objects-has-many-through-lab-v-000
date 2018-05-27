@@ -1,6 +1,7 @@
 require 'pry'
 class Doctor
   attr_reader :name
+
   @@all = []
   def self.all
     @@all
@@ -19,7 +20,6 @@ class Doctor
   def appointments
     Appointment.all.select do |appointment|
       appointment
-      binding.pry
     end
   end
   #The `Doctor` class needs an instance method, `#new_appointment`, that takes
