@@ -15,7 +15,11 @@ class Doctor
 
   def new_appointment(patient, date)
     Appointment.new(patient, self, date)
-    
+
+  end
+
+  def appointments
+
   end
   #The `Doctor` class needs an instance method, `#new_appointment`, that takes
   #in a date and an instance of the `Patient` class and creates a new appointment.
