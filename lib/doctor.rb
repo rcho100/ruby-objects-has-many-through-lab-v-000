@@ -19,10 +19,12 @@ class Doctor
 
   def appointments
     Appointment.all.select do |appointment|
-      appointment.doctor == self 
+      appointment.doctor == self
     end
   end
-  #The `Doctor` class needs an instance method, `#new_appointment`, that takes
-  #in a date and an instance of the `Patient` class and creates a new appointment.
-  #That appointment should know that it belongs to the doctor
+
+  def patients
+    appointments.patient
+
+  end
 end
