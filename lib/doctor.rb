@@ -19,7 +19,9 @@ class Doctor
   end
 
   def appointments
-
+    Appointment.all.select do |appointment|
+      appointment.
+    end
   end
   #The `Doctor` class needs an instance method, `#new_appointment`, that takes
   #in a date and an instance of the `Patient` class and creates a new appointment.
