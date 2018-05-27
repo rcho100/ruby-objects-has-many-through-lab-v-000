@@ -1,5 +1,6 @@
 require 'pry'
 class Doctor
+  attr_reader :name
   @@all = []
   def self.all
     @@all
@@ -8,10 +9,6 @@ class Doctor
   def initialize(name)
     @name = name
     @@all << self
-  end
-
-  def name
-    @name
   end
 
   def new_appointment(patient, date)
