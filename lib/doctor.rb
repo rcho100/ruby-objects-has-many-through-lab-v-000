@@ -1,3 +1,4 @@
+require 'pry'
 class Doctor
   @@all = []
   def self.all
